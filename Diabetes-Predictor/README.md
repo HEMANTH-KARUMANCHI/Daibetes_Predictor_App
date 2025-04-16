@@ -114,4 +114,3 @@ Confusion Matrix:
 - The model successfully learned patterns to predict diabetes with decent accuracy.
 - Logistic Regression provided a simple but effective baseline.
 - Can be improved with more features, feature engineering, and better models.
-- 
