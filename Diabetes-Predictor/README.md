@@ -4,16 +4,16 @@ A simple machine learning project using logistic regression to predict diabetes 
 
 #  Project Overview
 
-This project aims to **predict whether a person has diabetes** using medical diagnostic measurements. We use a supervised machine learning approach and the **Logistic Regression** algorithm to classify individuals as diabetic or not, based on features like glucose levels, BMI, and age.
+This project aims to predict whether a person has diabetes using medical diagnostic measurements. We use a supervised machine learning approach and the Logistic Regression algorithm to classify individuals as diabetic or not, based on features like glucose levels, BMI, and age.
 
-Dataset used: **Pima Indians Diabetes Dataset** from the UCI Machine Learning Repository.
+Dataset used: Pima Indians Diabetes Dataset from the UCI Machine Learning Repository.
 
 
 ## Objective
 
 To build a machine learning model that:
 - Learns from medical data of individuals
-- Predicts the **binary outcome** (1 = diabetic, 0 = non-diabetic)
+- Predicts the binary outcome (1 = diabetic, 0 = non-diabetic)
 - Provides performance metrics to evaluate prediction quality
 
 
@@ -23,23 +23,22 @@ diabetes-predictor/
 │
 ├── diabetes.csv              # Dataset file
 ├── main.py                   # Python script to train and evaluate model
-├── README.md                 # Project notes and documentation
 
 
 
 ## Tools & Libraries Used
 
-- **Python 3**
-- **Pandas** – data manipulation
-- **NumPy** – numerical operations
-- **Matplotlib & Seaborn** – visualization
-- **scikit-learn** – machine learning toolkit
+- Python 3
+- Pandas – data manipulation
+- NumPy – numerical operations
+- Matplotlib & Seaborn – visualization
+- scikit-learn – machine learning toolkit
 
 
 
 ## Dataset Description
 
-The dataset consists of **768 rows** and **9 columns**:
+The dataset consists of 768 rows and 9 columns:
 
 | Column Name              | Description                                |
 |--------------------------|--------------------------------------------|
@@ -56,33 +55,33 @@ The dataset consists of **768 rows** and **9 columns**:
 
 ##  Steps We Followed
 
-### 1. **Setting Up the Project**
-- Created a new folder in **VS Code**
+### 1. Setting Up the Project
+- Created a new folder in VS Code
 - Installed necessary libraries using `pip`
 
-### 2. **Downloading the Dataset**
+### 2. Downloading the Dataset
 - Retrieved from: [Pima Indians Dataset](https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv)
 - Saved as `diabetes.csv` in the project folder
 
-### 3. **Loading & Exploring the Data**
+### 3. Loading & Exploring the Data
 - Used `pandas` to load the CSV
 - Added column names for better readability
 - Previewed data using `.head()`, `.info()`, `.describe()`
 
-### 4. **Data Preparation**
-- Separated **features (X)** and **labels (y)**
-- Split data into **training (80%)** and **testing (20%)**
+### 4. Data Preparation
+- Separated features (X) and labels (y)
+- Split data into training (80%) and testing (20%)
 
-### 5. **Model Training**
-- Chose **Logistic Regression** – good for binary classification
+### 5. Model Training
+- Chose Logistic Regression – good for binary classification
 - Trained the model on training data using `.fit()`
 
-### 6. **Prediction & Evaluation**
+### 6. Prediction & Evaluation
 - Predicted using `.predict()` on test data
 - Evaluated using:
-  - **Accuracy score**
-  - **Confusion matrix**
-  - **Classification report**
+  - Accuracy score
+  - Confusion matrix
+  - Classification report
 
 
 ## Model Output
@@ -105,9 +104,9 @@ Confusion Matrix:
 [[88 12]
  [21 33]]
 
-- **Accuracy**: 79%
-- **Precision for diabetic (1)**: 71%
-- **Recall for diabetic (1)**: 62%
+- Accuracy: 79%
+- Precision for diabetic (1): 71%
+- Recall for diabetic (1): 62%
 
 
 ## Conclusion
@@ -115,12 +114,4 @@ Confusion Matrix:
 - The model successfully learned patterns to predict diabetes with decent accuracy.
 - Logistic Regression provided a simple but effective baseline.
 - Can be improved with more features, feature engineering, and better models.
-
-
-## Future Improvements
-
-- Try different models: **Random Forest**, **XGBoost**, **SVM**
-- Handle missing/zero values in features like `Insulin` and `SkinThickness`
-- Scale/normalize data for better performance
-- Hyperparameter tuning with `GridSearchCV`
-- Build a **web interface** using Flask/Streamlit for user input and prediction
+- 
