@@ -104,9 +104,9 @@ Confusion Matrix:
 [[88 12]
  [21 33]]
 
-- Accuracy: 79%
-- Precision for diabetic (1): 71%
-- Recall for diabetic (1): 62%
+- Accuracy: 79% (approx)
+- Precision for diabetic (1): 71% (approx)
+- Recall for diabetic (1): 62% (approx)
 
 
 ## Conclusion
