@@ -1,12 +1,14 @@
 # main.py
 
+#import the required libraries
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-import visuals  # Import custom visualization module
+# Import custom visualization module
+import visuals
 
 # Load dataset
 df = pd.read_csv("Diabetes Data/diabetes.csv")
@@ -48,7 +50,7 @@ print(classification_report(y_test, y_pred))
 cm = confusion_matrix(y_test, y_pred)
 visuals.plot_confusion_matrix(cm)
 
-
+#operating system
 import os
 import joblib
 
